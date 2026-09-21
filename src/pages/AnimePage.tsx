@@ -72,7 +72,6 @@ const AnimePage = () => {
   };
   return (
     <AppLayout>
-      <NowAnimeDialog />
       <SEO
         title="Anime – BingBloom"
         description="25 anime collections — trending, top-rated, isekai, mecha, romance, slice of life, sports and more. Stream anime free."
