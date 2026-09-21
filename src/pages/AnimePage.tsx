@@ -1,13 +1,4 @@
-import { useRef, useState } from "react";
-import { ArrowUpRight } from "lucide-react";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
-import { trackEvent } from "@/lib/analytics";
+import { useRef } from "react";
 import BannerAd468 from "@/components/BannerAd468";
 import { useQuery } from "@tanstack/react-query";
 import AppLayout from "@/components/AppLayout";
