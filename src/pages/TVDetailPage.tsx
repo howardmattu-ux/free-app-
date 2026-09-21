@@ -8,6 +8,7 @@ import DownloadButton from "@/components/DownloadButton";
 import { useTvDetail, useTvSeason, useTvSimilar, useTvRecommendations, useTrendingTv, usePopularTv, useTopRatedTv } from "@/hooks/useTmdb";
 import { img } from "@/lib/tmdb";
 import InlineAdRow from "@/components/InlineAdRow";
+import BannerAd468 from "@/components/BannerAd468";
 
 const TVDetailPage = () => {
   const { id } = useParams<{ id: string }>();
@@ -87,6 +88,9 @@ const TVDetailPage = () => {
         }}
       />
       <div className="relative">
+        <div className="px-3 pt-2 pb-1">
+          <BannerAd468 />
+        </div>
         <div className="relative w-full h-[55vh] md:h-[70vh]">
           {backdrop && <img src={backdrop} alt={data.name} className="absolute inset-0 w-full h-full object-cover" />}
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
@@ -142,6 +146,9 @@ const TVDetailPage = () => {
                   season={activeSeason}
                   episode={1}
                 />
+              </div>
+              <div className="mb-5 -mx-[5%] md:mx-0">
+                <InlineAdRow count={4} />
               </div>
             </div>
           </div>
